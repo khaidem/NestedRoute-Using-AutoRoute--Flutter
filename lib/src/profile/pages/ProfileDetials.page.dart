@@ -24,14 +24,10 @@ class ProfileDetialPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                context.navigateTo(
-                  const ReviewTabRouter(
-                    children: [
-                      ReviewRoute(),
-                      ProfileDetialRoute(),
-                    ],
-                  ),
-                );
+                context.pushRoute(const ReviewTabRouter(children: [
+                  ReviewRoute(),
+                  ProfileDetialRoute(),
+                ]));
               },
               child: const Text('go to Account'),
             ),
